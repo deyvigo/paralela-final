@@ -249,6 +249,9 @@
   }
   ```
 
+  *Ejecución*
+  #image("images/img_1752188867858.png")
+
   (b) Atomicidad
   ```c #pragma omp atomic
   <instrucción atómica>;
@@ -290,6 +293,9 @@
     return id_t + i;
   }
   ```
+
+  *Ejecución*
+  #image("images/img_1752188919024.png")
   
   (c) Barrera
 
@@ -325,6 +331,9 @@
     printf("suma total = %d\n", total);
   }
   ```
+
+  *Ejecución*
+  #image("images/img_1752188970922.png")
 
   *10. Funciones de biblioteca para _run-time_ para locks*
 
@@ -397,6 +406,7 @@
 
   Lo que hace el código es crear una región bloqueada. Cada hilo intenta acceder a la región bloqueada que está controlada por un lock. El lock solo permite que un hilo acceda a la vez. Pero cada hilo intentará acceder 5 veces a esa región. Por lo tanto cada hilo hará 5 print de inicio y fin de la región bloqueada respectivamente.
 
+  *Ejecución*
   #image("images/img_1751992715255.png")
 ]
 
